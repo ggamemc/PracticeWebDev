@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<h1>Register</h1>
+	
+	<form>
+		<label for="First">First Name: </label>
+		<input id="First" name="First" type="text" placeholder="Chawisa" required>
+	
+		<label for="Last">Last Name: </label>
+		<input id="Last" name="Last" type="text"placeholder="L." required>
+
+		<div>
+			<label for="male">
+				Male
+				<input id="male" name="gender" type="radio" value="male">
+			</label>
+			
+
+			<label for="female">
+				Female
+				<input id="female" name="gender" type="radio" value="female">
+			</label>
+			
+
+			<label for="other">
+				Other
+				<input id="other" name="gender" type="radio" value="other">
+			</label>
+		</div>
+
+		<div>
+			<label for="email">
+				Email: 
+				<input  id="email" type="email" name="email"placeholder="Your email" required>
+			</label>
+
+			<label for="password">
+				Password: 
+				<input id="password" type="password" name="password" pattern=".{5,10}" required title="5 to 10 characters">
+				<!-- pattern เอาไว้กำหนดว่าจะให้ใส่กี่ตัว ส่วน required title เป็น message error -->
+			</label>
+		</div>
+
+		<div>
+			<label for="bday">
+				Birthday: 
+				<select name="Month">
+					<option>Month</option>
+					<option>Apr</option>
+				</select>
+				<select name="Day">
+					<option>Day</option>
+					<option>3</option>
+				</select>
+				<select name="Year">
+					<option>Year</option>
+					<option>1999</option>
+				</select>
+			</label>	
+		</div>
+		
+		<div>
+			<label for="agreed">I agree to the terms and conditions</label>
+			<input id="agreed" name="checkbox" type="checkbox">
+		</div>
+
+		<button>Submit</button>
+	</form>
+
+</body>
+</html>
